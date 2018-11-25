@@ -3,7 +3,7 @@ FROM multiarch/crossbuild
 ENV MACOSX_DEPLOYMENT_TARGET=10.8
 ENV CROSS_TRIPLE=x86_64-apple-darwin
 
-ARG LDC_VERSION=1.5.0-beta1
+ARG LDC_VERSION=1.12.0
 
 ADD https://github.com/ldc-developers/ldc/releases/download/v${LDC_VERSION}/ldc2-${LDC_VERSION}-linux-x86_64.tar.xz /root/ldc-linux.tar.xz
 ADD https://github.com/ldc-developers/ldc/releases/download/v${LDC_VERSION}/ldc2-${LDC_VERSION}-osx-x86_64.tar.xz /root/ldc-darwin.tar.xz
